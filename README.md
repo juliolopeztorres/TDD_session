@@ -8,7 +8,7 @@ The goal here is to calculate sub matrix with different params such as:
 - Vertical position of the center square
 - Range / Wide of the sub matrix
  
-I tried to following certain patterns as Clean Code Book suggests and TDD.
+I tried to following certain patterns as Clean Code Book [1] suggests and TDD.
  
 # Usage
 
@@ -23,6 +23,10 @@ Just run
 
 and go to <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a>.
 
+You can control the main variables (Middle square due its coordinates, 
+submatrix's range and main matrix's side) inside the
+[Default Controller](src/AppBundle/Controller/DefaultController.php).
+
 # System Requirements
  
 Dependencies used in this project are:
@@ -33,3 +37,6 @@ Dependencies used in this project are:
 Check _composer.json_ to get more info
 
 Enjoy
+
+[1] <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"> Clean Code at Amazon </a>
+    <a href="https://en.wikipedia.org/wiki/Robert_Cecil_Martin">Author: Robert Cecil Martin</a>
