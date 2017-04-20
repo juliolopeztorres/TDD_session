@@ -30,7 +30,6 @@ class DefaultController extends Controller
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', [
             'matrix' => $matrix,
-            'custom_width' => 100 / count($matrix[0]),
             'subMatrix' => $subMatrix,
             'range' => self::RANGE,
             'width_matrix' => self::HEIGHT_WIDTH
