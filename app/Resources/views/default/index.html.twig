@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="title">
+                <h1>Result</h1>
+            </div>
+
+            <div>
+                <p>
+                    <strong>Range</strong>: <span>{{ range }}</span> &nbsp;
+                    <strong>Width of matrix</strong>: <span>{{ width_matrix }}</span>
+                </p>
+            </div>
+
+            <div style="text-align: center;">
+                {% for row in matrix %}
+                    <div style="width: 100%; display: table; border-spacing: 5px; table-layout: fixed;">
+                        {% for square in row %}
+                            {% if square in subMatrix %}
+                                {% set color = 'square-red'%}
+                            {% else %}
+                                {% set color = 'square-blue' %}
+                            {% endif %}
+                            <div class="square {{ color }}"
+                                 style="display: table-cell;">{{ square }}</div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
