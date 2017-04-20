@@ -36,7 +36,10 @@ Dependencies used in this project are:
 
 Check _composer.json_ to get more info
 
-Enjoy
+Enjoy!
 
-[1] <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"> Clean Code at Amazon </a>
-    <a href="https://en.wikipedia.org/wiki/Robert_Cecil_Martin">Author: Robert Cecil Martin</a>
+Thanks to Pedro Gómez [2] for the task's idea!
+
+[1]<a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"> Clean Code at Amazon </a>
+    <a href="https://en.wikipedia.org/wiki/Robert_Cecil_Martin">Author: Robert Cecil Martin</a><br/>
+[2] <a href="https://github.com/pedritovaldes">Pedro Gómez</a>
