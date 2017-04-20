@@ -23,7 +23,8 @@ Just run
 
 and go to <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a>.
 
-You can control the main variables (Middle square, range and side of the matrix) inside the
+You can control the main variables (Middle square due its coordinates, 
+submatrix's range and main matrix's side) inside the
 [Default Controller](src/AppBundle/Controller/DefaultController.php).
 
 # System Requirements
