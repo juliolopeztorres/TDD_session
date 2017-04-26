@@ -14,6 +14,28 @@
                 </p>
             </div>
 
+            <div style="display: table;">
+                <form action="">
+                    <div style="width: 100%; display: inline-block;">
+                        <label for="side">Side:</label>
+                        <input type="text" name="side" placeholder="5" value="{{ parameters.side }}">
+
+                        <label for="range">Range:</label>
+                        <input type="text" name="range" placeholder="1" value="{{ parameters.range }}">
+                    </div>
+
+                    <div style="width: 100%; display: inline-block;">
+                        <label for="coordinateX">Coordinate X:</label>
+                        <input type="text" name="coordinateX" placeholder="2" value="{{ parameters.coordinateX }}">
+
+                        <label for="coordinateY">Coordinate X:</label>
+                        <input type="text" name="coordinateY" placeholder="2" value="{{ parameters.coordinateY }}">
+                    </div>
+
+                    <input type="submit" value="Send!">
+                </form>
+            </div>
+
             <div style="text-align: center;">
                 {% for row in matrix %}
                     <div style="width: 100%; display: table; border-spacing: 5px; table-layout: fixed;">
