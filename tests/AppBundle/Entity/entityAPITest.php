@@ -3,7 +3,7 @@
 namespace Tests\AppBundle\Entity;
 
 use AppBundle\Entity\entityAPI;
-use AppBundle\Exception\InvalidMatrixWidthHeight;
+use AppBundle\Exception\InvalidMatrixSide;
 use AppBundle\Exception\InvalidMiddleCoordinates;
 use AppBundle\Exception\InvalidRange;
 use AppBundle\Exception\NonExistingSquare;
@@ -38,7 +38,7 @@ class entityAPITest extends WebTestCase
 
     public function testCreateEntityWithEvenWidthHeight()
     {
-        $this->expectException(InvalidMatrixWidthHeight::class);
+        $this->expectException(InvalidMatrixSide::class);
 
         EntityAPI::createMatrixForTestWithHeightAndWidth(2);
     }

@@ -2,10 +2,10 @@
 
 namespace AppBundle\Exception;
 
-class InvalidMatrixWidthHeight extends \RuntimeException
+class InvalidMatrixSide extends \RuntimeException
 {
     const ERROR_CODE = 9997;
-    const CUSTOM_MESSAGE = 'Invalid Matrix Width - Height. It must be an odd number (entered %s).';
+    const CUSTOM_MESSAGE = 'Invalid Matrix side. It must be an odd number (entered %s).';
 
     public function __construct(int $enteredWidthHeight)
     {

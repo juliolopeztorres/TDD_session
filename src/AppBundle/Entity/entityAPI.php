@@ -2,7 +2,7 @@
 
 namespace AppBundle\Entity;
 
-use AppBundle\Exception\InvalidMatrixWidthHeight;
+use AppBundle\Exception\InvalidMatrixSide;
 use AppBundle\Exception\InvalidMiddleCoordinates;
 use AppBundle\Exception\InvalidRange;
 use AppBundle\Exception\NonExistingSquare;
@@ -35,7 +35,7 @@ class entityAPI
     private function checkValidMatrixWidthHeight($matrixWidthHeight) : bool
     {
         if ($matrixWidthHeight % 2 === 0) {
-            throw new InvalidMatrixWidthHeight($matrixWidthHeight);
+            throw new InvalidMatrixSide($matrixWidthHeight);
         }
 
         return true;
